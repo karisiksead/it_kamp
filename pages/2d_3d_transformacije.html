@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 1000px;
+        }
+        
+        div {
+            width: 400px;
+            height: 100px;
+            background-color: violet;
+            border: 1px solid blue;
+            -ms-transform: translate(50px, 100px);
+            transform: translate(50px, 100px);
+            /* transition: width 4s height 4s transition 2s; */
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+            transition-duration: 5s;
+        }
+        
+        div#rotacija {
+            position: absolute;
+            top: 400px;
+            background-color: darkkhaki;
+            -ms-transform: rotate(30deg);
+            transform: rotate(30deg);
+        }
+        
+        div#scale {
+            position: absolute;
+            top: 500px;
+            background-color: cyan;
+            -ms-transform: scale(0.5, 1);
+            transform: scale(0.5, 1);
+            /* transform: skew(20deg, 30deg); */
+        }
+        
+        div#skew {
+            background-color: coral;
+            -ms-transform: skew(20deg, 30deg);
+            transform: skew(20deg, 30deg);
+        }
+        
+        div#matrica:hover {
+            background-color: darkolivegreen;
+            -ms-transform: matrix(2, 0.5, 0.5, 1.5, 450, 50);
+            transform: matrix(2, 0.5, 0.5, 1.5, 450, 50);
+        }
+        
+        @keyframes primer1 {
+            from {
+                background-color: darkslateblue;
+            }
+            to {
+                background-color: floralwhite;
+            }
+        }
+        
+        .div1 {
+            display: block;
+            position: absolute;
+            left: px;
+        }
+        
+        .div1:hover {
+            width: 300px;
+            height: 200px;
+            background-color: lawngreen;
+            animation-name: primer1;
+            animation-duration: 5s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Vezbe za 2D transformacije</h1>
+    <p>Vezbanje 2d f-ja</p>
+    <div>Ovaj se element transformise</div>
+    <div id="rotacija">Rotacija diva</div>
+    <div id="scale">Scale diva</div>
+    <div id="skew">SKEW diva</div>
+    <div id="matrica">
+        <h1>Hoveruj preko mene za trasformaciju</h1>
+    </div>
+    <div class="div1">tu nesto probati </div>
+</body>
+
+</html>
