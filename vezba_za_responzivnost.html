@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .kontejner {
+            display: flex;
+            /* flex-direction: row; */
+            justify-content: space-evenly;
+        }
+        
+        .sadrzaj {
+            max-width: 25%;
+            text-align: center;
+            padding: 64px 32px 96px;
+            background-color: #F6F7F8;
+        }
+        
+        @media screen and (max-width: 480px) {
+            .kontejner {
+                flex-direction: column;
+                /* min-width: 100%; */
+                /* margin: auto; */
+            }
+            .sadrzaj {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kontejner">
+        <div class="sadrzaj">
+            <h1>Raclette Blueberry Nextious Level</h1>
+            <p>Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <a href="#">
+                <p>Learn More</p>
+            </a>
+        </div>
+
+        <div class="sadrzaj">
+            <h1>Ennui Snackwave Thundercats</h1>
+            <p>Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <a href="#">
+                <p>Learn More</p>
+            </a>
+        </div>
+
+        <div class="sadrzaj">
+            <h1>Raclette Blueberry Nextious Level</h1>
+            <p>Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <a href="#">
+                <p>Learn More</p>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
