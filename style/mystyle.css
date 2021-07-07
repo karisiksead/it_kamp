@@ -4,29 +4,33 @@
     padding: 0;
 }
 
+body {
+    background-color: antiquewhite;
+}
+
 
 /* pocetak stilizacije a linka */
 
 a:link {
-    color: green;
+    color: black;
     background-color: transparent;
     text-decoration: none;
 }
 
 a:visited {
-    color: pink;
+    color: black;
     background-color: transparent;
     text-decoration: none;
 }
 
 a:hover {
-    color: red;
+    color: black;
     background-color: transparent;
     text-decoration: underline;
 }
 
 a:active {
-    color: yellow;
+    color: red;
     background-color: transparent;
     text-decoration: underline;
 }
@@ -90,11 +94,14 @@ body {
 }
 
 .nav {
-    min-height: 50px;
-    height: 30px;
-    /* only for demonstration, should be removed */
-    /* background: #ccc; */
-    padding: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    font-size: 20px;
+    border: 1px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .content {
@@ -111,3 +118,73 @@ body {
     text-align: center;
     color: white;
 }
+
+
+/* stilizacija Vezbe_1 Flex boxova */
+
+.heder-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
+    font-size: 25px;
+    background-color: #FBFBFF;
+    color: #040F30;
+}
+
+.content-flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    min-height: 200vh;
+    background-color: white;
+}
+
+.item-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #EEEEEE;
+    border-radius: 8px;
+    width: 30%;
+}
+
+.item-flex img {
+    border-radius: 8px 8px 0 0;
+}
+
+.item-flex div {
+    padding: 30px;
+}
+
+.item-flex h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.item-flex i {
+    font-size: 13px;
+    margin-right: 15px;
+    color: #1BB0CE
+}
+
+.item-flex:hover {
+    transition: 3s;
+    transform: rotateY(360deg);
+}
+
+@media screen and (max-width:480px) {
+    .content-flex {
+        flex-direction: column;
+    }
+    .item-flex {
+        width: 100%;
+    }
+    h1 {
+        font-size: 25px;
+    }
+}
+
+
+/* KRAJ stilizacija Vezbe_1 Flex boxova */

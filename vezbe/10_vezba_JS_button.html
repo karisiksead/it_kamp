@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../style/mystyle.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heder {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        ul {
+            display: block;
+        }
+        
+        ul li {
+            display: flex;
+            margin: 15px;
+        }
+        
+        .dugme {
+            width: 90px;
+            height: 50px;
+            background-color: violet;
+            padding: 10px;
+            display: none;
+        }
+        
+        @media screen and (max-width: 500px) {
+            .heder {
+                flex-direction: column;
+                justify-content: center;
+            }
+            .dugme {
+                display: flex;
+            }
+            ul {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="heder">
+        <img src="../images/Logo.png" width="100px" height="100px">
+        <button id="btn" class="dugme">Klikni me</button>
+        <ul id="lista">
+            <li>Link_1</li>
+            <li>Link_2</li>
+            <li>Link_3</li>
+            <li>Link_4</li>
+        </ul>
+    </div>
+    <script>
+        document.getElementById('btn').onclick = function() {
+            document.getElementById('lista').style.display = 'flex';
+        }
+    </script>
+</body>
+
+</html>
