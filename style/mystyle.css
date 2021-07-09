@@ -5,16 +5,16 @@
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: white;
 }
 
 
 /* pocetak stilizacije a linka */
 
 a:link {
-    color: black;
+    color: #428BCA;
     background-color: transparent;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 a:visited {
@@ -98,7 +98,6 @@ body {
     justify-content: center;
     background-color: white;
     font-size: 20px;
-    border: 1px solid black;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -188,3 +187,96 @@ body {
 
 
 /* KRAJ stilizacija Vezbe_1 Flex boxova */
+
+
+/* Stilizacija Vezbe_2 Flex */
+
+.content404 {
+    position: relative;
+    width: 100vw;
+    min-height: 35vh;
+    background-color: white;
+}
+
+.notfound404 {
+    font-size: 800%;
+    margin: 2% 0 2% 15%;
+    color: #CCCCCC;
+}
+
+.notfound {
+    font-size: 400%;
+    color: #CCCCCC;
+}
+
+.content404 p {
+    font-size: 120%;
+    margin: 0 0 2% 15%;
+    color: #000000;
+}
+
+.content404-flex {
+    display: flex;
+    align-items: center;
+    background-color: #293A4A;
+    min-height: 30vh;
+    color: white;
+}
+
+.content404-flex-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    background-color: white;
+    border: 2px solid black;
+    color: #551A8B;
+}
+
+@media screen and (max-width:480px) {
+    .content404-flex {
+        flex-direction: column;
+        width: 100%;
+    }
+    #uzvicnik404 {
+        display: none;
+    }
+}
+
+
+/* KRAJ stilizacija Vezbe_2 Flex boxova */
+
+.content-flex-vezba-3 {
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item-flex-vezba-3 {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    justify-content: center;
+    padding: 30px;
+}
+
+.item-flex-vezba-3 h1 {
+    font-size: 32px;
+    color: #1F2121;
+    margin-bottom: 16px;
+}
+
+.item-flex-vezba-3 button {
+    width: 200px;
+    padding: 16px 28px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    color: #E9BB66;
+    border: 3px solid #E9BB66;
+    border-radius: 25px;
+    margin-top: 26px;
+}

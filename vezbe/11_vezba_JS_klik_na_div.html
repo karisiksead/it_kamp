@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../style/mystyle.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heder {
+            display: flex;
+            width: 50vw;
+            min-height: 50px;
+            justify-content: space-evenly;
+            border: 2px solid black;
+        }
+        
+        .tab1 {
+            width: 25%;
+            min-height: 25%;
+            text-align: center;
+            background-color: green;
+        }
+        
+        .tab2 {
+            background-color: hotpink;
+        }
+        
+        .tab3 {
+            background-color: khaki;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heder">
+        <div class="tab1" id="tab1" onclick="swithcTabs('Ovo je za tab1')">Tab 1</div>
+        <div class="tab1 tab2" id="tab2" onclick="swithcTabs('Ovo je za tab2')">Tab 2</div>
+        <div class="tab1 tab3" id="tab3" onclick="swithcTabs('Ovo je za tab3')">Tab 3</div>
+    </div>
+    <div class="heder" id="ispis">
+
+    </div>
+    <script>
+        function swithcTabs(text) {
+            document.getElementById('ispis').innerHTML = text;
+        }
+        // document.getElementById('tab1').onclick = function() {
+        //     document.getElementById('ispis').innerHTML = "Tab 1";
+        // }
+        // document.getElementById('tab2').onclick = function() {
+        //     document.getElementById('ispis').innerHTML = "Tab 2";
+        // }
+        // document.getElementById('tab3').onclick = function() {
+        //     document.getElementById('ispis').innerHTML = "Tab 3";
+        // }
+    </script>
+</body>
+
+</html>
