@@ -247,6 +247,9 @@ body {
 
 /* KRAJ stilizacija Vezbe_2 Flex boxova */
 
+
+/* Pocetak stilizacija Vezbe_3 Flex boxova */
+
 .content-flex-vezba-3 {
     display: flex;
     max-width: 100%;
@@ -280,3 +283,24 @@ body {
     border-radius: 25px;
     margin-top: 26px;
 }
+
+.item-flex-vezba-3 button:hover {
+    background-color: #E9BB66;
+    color: #1F2121;
+    border: 3px solid #1F2121;
+}
+
+@media screen and (max-width:480px) {
+    .content-flex-vezba-3 {
+        flex-direction: column;
+    }
+    .item-flex-vezba-3 {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+
+/* KRAJ stilizacija Vezbe_3 Flex boxova */
