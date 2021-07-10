@@ -304,3 +304,95 @@ body {
 
 
 /* KRAJ stilizacija Vezbe_3 Flex boxova */
+
+
+/* POCETAK stilizacija Vezbe_4 Flex LAYOUT-a */
+
+.header-layout {
+    display: flex;
+    width: 100%;
+    min-height: 25vh;
+    justify-content: space-evenly;
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.header-layout div {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 200%;
+    /* align-content: flex-start; */
+}
+
+.header-layout img {
+    border-radius: 50%;
+}
+
+.nav-layout {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #444444;
+}
+
+.nav-layout a {
+    color: white;
+    padding: 14px 35px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-layout a:hover {
+    background-color: #dddddd;
+    color: black;
+}
+
+.content-layout {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 40vh;
+    background-color: blueviolet;
+    text-align: justify;
+}
+
+.side-layout {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.main-layout {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.content-layout img,
+h1 {
+    width: 100%;
+    /* height: 300px; */
+    padding: 15px;
+}
+
+.footer-layout {
+    width: 100%;
+    min-height: 25vh;
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+@media screen and(width:480px) {
+    .side-layout,
+    .main-layout {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+/* KRAJ stilizacija Vezbe_4 Flex LAYOUT-a */

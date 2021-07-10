@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: 500px;
+            background-color: burlywood;
+            padding: 15px;
+        }
+        
+        #ispis {
+            background-color: black;
+            color: white;
+            width: 500px;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="form1">
+        <label for="ime">Ime:</label><br>
+        <input type="text" name="ime" id="name"><br><br>
+        <label for="mail">Mail:</label><br>
+        <input type="email" name="mail" id="mail"><br><br>
+        <label for="poruka">Unesite tekst:</label><br>
+        <input type="text" name="tekst" id="tekst"><br><br>
+        <input type="submit" name="Potvrdi" id="butt1" value="Potvrdi">
+    </form>
+    <div id="ispis"></div>
+    <script>
+        document.getElementById('form1').addEventListener('click', function(event) {
+            event.preventDefault();
+        })
+        document.getElementById('butt1').onclick = function() {
+            document.getElementById('ispis').innerHTML = document.getElementById('name').value +
+                ' ' + document.getElementById('mail').value +
+                ' ' + document.getElementById('tekst').value
+        }
+    </script>
+</body>
+
+</html>
