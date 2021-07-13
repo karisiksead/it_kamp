@@ -8,20 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .heder {
+        /* .heder {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
         }
-        
-        ul {
+         */
+        /* ul {
             display: block;
         }
         
         ul li {
             display: flex;
             margin: 15px;
-        }
+        } */
         
         .dugme {
             width: 90px;
@@ -30,8 +30,7 @@
             padding: 10px;
             display: none;
         }
-        
-        @media screen and (max-width: 500px) {
+        /* @media screen and (max-width: 500px) {
             .heder {
                 flex-direction: column;
                 justify-content: center;
@@ -42,25 +41,48 @@
             ul {
                 display: none;
             }
+        } */
+        
+        @media screen and (max-width: 500px) {
+            .nav-layout {
+                display: none;
+            }
+            .dugme {
+                display: flex;
+            }
         }
     </style>
 </head>
 
-
 <body>
+    <div class="nav">
+        <a href="../index.html">Početna strana</a>
+    </div>
+
+    <!-- Heding -->
+    <div class="header-layout">
+        <h1>HEADER</h1>
+    </div>
+    <!-- Navigacioni meni -->
+    <div class="nav-layout" id="lista">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+
     <div class="heder">
-        <img src="../images/Logo.png" width="100px" height="100px">
         <button id="btn" class="dugme">Klikni me</button>
-        <ul id="lista">
+        <!-- <ul id="lista">
             <li>Link_1</li>
             <li>Link_2</li>
             <li>Link_3</li>
             <li>Link_4</li>
-        </ul>
+        </ul> -->
     </div>
     <script>
         document.getElementById('btn').onclick = function() {
-            document.getElementById('lista').style.display = 'flex';
+            document.getElementById('lista').style.display = 'block';
         }
     </script>
 </body>

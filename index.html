@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="style/mystyle.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,45 +11,87 @@
 </head>
 
 <body>
-    <div class="nav">
-        <a href="../index.html">Vrati se na početnu stranu</a>
-    </div>
-    <!-- Heding -->
-    <div class="header-layout">
-        <img src="images/Profilna za GitHub.jpg" alt="">
-        <div>
-            <h1>SEAD KARIŠIK</h1>
-            <h2>MARKETING ASSISTANT</h2>
-        </div>
+    <div class="cw-width">
+        <!-- Heding -->
+        <div class="header-layout">
+            <img src="images/Profilna za GitHub.jpg" alt="sead karisik">
+            <div>
+                <h1>SEAD KARIŠIK</h1>
+                <h2>MARKETING ASSISTANT</h2>
+            </div>
 
-    </div>
-    <!-- Navigacioni meni -->
-    <div class="nav-layout">
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-    </div>
-    <!-- Flex sadrzaj sa side barom i main-om -->
-    <div class="content-layout">
-        <div class="side-layout">
-            <h1>Kurs robotike</h1>
-            <img src="../images/robotika-kurs.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit fames curabitur accumsan, auctor montes nascetur pellentesque taciti eros facilisis ante nunc laoreet malesuada, quisque tempor mus sapien arcu nullam turpis placerat feugiat. Pulvinar
-                magnis fames condimentum eu porttitor neque libero, congue conubia mollis eget non sodales dui viverra, metus bibendum sollicitudin mattis curae risus.</p>
         </div>
-        <div class="main-layout">
-            <h1>Naucite C#</h1>
-            <img src="../images/csharp.jpg" alt="">
-            <p>Enim porttitor potenti ornare odio sapien volutpat porta purus nisi, suscipit nisl fringilla nunc justo dapibus aliquet netus erat morbi, convallis nullam mattis varius tempus ultrices habitasse maecenas. Convallis per malesuada metus eleifend
-                nisi sed nullam cubilia, vel phasellus libero suspendisse litora hendrerit primis, luctus mi maecenas penatibus quisque ac varius.</p>
-            <h1>WordPress</h1>
-            <img src="../images/wordpress-kurs.jpg" alt="">
+        <!-- Navigacioni meni -->
+        <div class="nav-layout nav-cw sticky" id="nav-cw">
+            <a href="#kontakt">KONTAKT</a>
+            <a href="#obrazovanje">OBRAZOVANJE</a>
+            <a href="#iskustvo">ISKUSTVO</a>
+            <!-- dropdown linkovi -->
+            <div class="nav-layout nav-cw sticky" id="dropdown">
+                <a href="#" id="vezbe">VEŽBE</a>
+                <div class="dropdown">
+                    <a href="vezbe/vezba_1.html">Vežba 1</a>
+                    <a href="vezbe/vezba_2.html">Vežba 2</a>
+                    <a href="vezbe/vezba_3.html">Vežba 3</a>
+                    <a href="vezbe/vezba_4.html">Vežba 4</a>
+                    <a href="vezbe/5_vezba_za_responzivnost.html">Vežba 5</a>
+                    <a href="vezbe/6_vezba_podizanje_na_github.html">Vežba 6</a>
+                    <a href="vezbe/7_vezba_2d_3d_transformacije.html">Vežba 7</a>
+                    <a href="vezbe/8_vezba_JS.html">Vežba 8</a>
+                    <a href="vezbe/9_vezba_flexbox.html">Vežba 9</a>
+                    <a href="vezbe/10_vezba_JS_button.html">Vežba 10</a>
+                    <a href="vezbe/11_vezba_JS_klik_na_div.html">Vežba 11</a>
+                    <a href="vezbe/12_vezba_forma_ispis.html">Vežba 12</a>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- Flex sadrzaj sa side barom i main-om -->
+        <div class="content-layout">
+            <div class="side-layout">
+                <h1>LIČNI PROFIL</h1>
+                <p>Izuzetno motivisan da neprestano razvijam svoje veštine i profesionalno napredujem. Uveren sam u svoju sposobnost da smislim zanimljive ideje za nezaboravne marketinške kampanje.</p>
+                <h1 id="kontakt">KONTAKT</h1>
+                <i class="fa fa-map-pin"> AVNOJ-a bb Novi Pazar</i>
+                <i class="fa fa-envelope"> karisiksead@gmail.com</i>
+                <i class="fa fa-phone"> +381 65 399 2 399</i>
+                <h1 id="obrazovanje">OBRAZOVANJE</h1>
+                <p>FAKULTET TEHNIČKIH NAUKA U ČAČKU, Čačak</p>
+                <p>Smer: Elektrotehničko i računarsko inženjerstvo, Računarsko inženjerstvo.</p>
+                <p>Stečeno zvanje: Master inženjer elektrotehnike i računarstva.</p>
+            </div>
+            <div class="main-layout">
+                <h1>VEŠTINE</h1>
+
+                <ul>
+                    <li>Izuzetne veštine komunikacije i umrežavanja</li>
+                    <li>Uspešan rad u timskom okruženju, kao i samostalno</li>
+                    <li>Sposobnost rada pod pritiskom i više zadataka</li>
+                    <li>Sposobnost praćenja upustava i postizanja kvalitetnih rezultata</li>
+                </ul>
+
+                <h1 id="iskustvo">RADNO ISKUSTVO</h1>
+                <h2>Marketing Assistant</h2>
+                <ul>
+                    <li>Rad na društvenim mrežama (Facebook, Instagram)</li>
+                    <li>Organizovanje i sinhronizacija tima</li>
+                    <li>Puštanje plaćenih reklama</li>
+                    <li>Praćenje metrika na sponzorisanim oglasima</li>
+                    <li>Skaliranje plaćenih kampanja i oglasa na Facebook Ads i na Google Ads Menadžeru</li>
+                    <li>Kreiranje novih plaćenih kampanja sa uskim targetingom na potencijalnu publiku</li>
+                </ul>
+
+            </div>
         </div>
     </div>
     <!-- Footer -->
     <div class="footer-layout">
-        <h1>FOOTER</h1>
+        <span>Sead Karišik</span>
+        <i class="fa fa-map-pin"> AVNOJ-a bb Novi Pazar</i>
+        <i class="fa fa-envelope"> karisiksead@gmail.com</i>
+        <i class="fa fa-phone"> +381 65 399 2 399</i>
     </div>
 
 </body>

@@ -8,12 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .kontejner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 2px solid black;
+            margin: auto;
+            max-width: 50%;
+            min-height: 200px;
+            background-color: turquoise;
+        }
+        
         .heder {
             display: flex;
             width: 50vw;
+            margin: auto;
             min-height: 50px;
             justify-content: space-evenly;
-            border: 2px solid black;
         }
         
         .tab1 {
@@ -21,26 +32,45 @@
             min-height: 25%;
             text-align: center;
             background-color: green;
+            color: white;
+            font-weight: bold;
+            padding: 15px;
         }
         
         .tab2 {
             background-color: hotpink;
+            color: white;
+            font-weight: bold;
+            padding: 15px;
         }
         
         .tab3 {
             background-color: khaki;
+            color: white;
+            font-weight: bold;
+            padding: 15px;
+        }
+        
+        #ispis {
+            color: red;
+            font-weight: bold;
+            padding: 15px;
         }
     </style>
 </head>
 
 <body>
-    <div class="heder">
-        <div class="tab1" id="tab1" onclick="swithcTabs('Ovo je za tab1')">Tab 1</div>
-        <div class="tab1 tab2" id="tab2" onclick="swithcTabs('Ovo je za tab2')">Tab 2</div>
-        <div class="tab1 tab3" id="tab3" onclick="swithcTabs('Ovo je za tab3')">Tab 3</div>
+    <div class="nav">
+        <a href="../index.html">Početna strana</a>
     </div>
-    <div class="heder" id="ispis">
-
+    <div class="kontejner">
+        <div class="heder">
+            <div class="tab1" id="tab1" onclick="swithcTabs('Ovo je za Tab 1')">Tab 1</div>
+            <div class="tab1 tab2" id="tab2" onclick="swithcTabs('Ovo je za Tab 2')">Tab 2</div>
+            <div class="tab1 tab3" id="tab3" onclick="swithcTabs('Ovo je za Tab 3')">Tab 3</div>
+        </div>
+        <div class="heder" id="ispis">
+        </div>
     </div>
     <script>
         function swithcTabs(text) {
