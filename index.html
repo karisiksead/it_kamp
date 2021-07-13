@@ -14,8 +14,10 @@
     <div class="cw-width">
         <!-- Heding -->
         <div class="header-layout">
+            <i class="fa fa-bars" id="hamburger-menu" style="font-size: 180%; text-align: right; margin-right: 5%;"></i>
             <img src="images/Profilna za GitHub.jpg" alt="sead karisik">
             <div>
+
                 <h1>SEAD KARIŠIK</h1>
                 <h2>MARKETING ASSISTANT</h2>
             </div>
@@ -26,24 +28,25 @@
             <a href="#kontakt">KONTAKT</a>
             <a href="#obrazovanje">OBRAZOVANJE</a>
             <a href="#iskustvo">ISKUSTVO</a>
+            <a href="#" id="vezbe">VEŽBE</a>
             <!-- dropdown linkovi -->
-            <div class="nav-layout nav-cw sticky" id="dropdown">
-                <a href="#" id="vezbe">VEŽBE</a>
-                <div class="dropdown">
-                    <a href="vezbe/vezba_1.html">Vežba 1</a>
-                    <a href="vezbe/vezba_2.html">Vežba 2</a>
-                    <a href="vezbe/vezba_3.html">Vežba 3</a>
-                    <a href="vezbe/vezba_4.html">Vežba 4</a>
-                    <a href="vezbe/5_vezba_za_responzivnost.html">Vežba 5</a>
-                    <a href="vezbe/6_vezba_podizanje_na_github.html">Vežba 6</a>
-                    <a href="vezbe/7_vezba_2d_3d_transformacije.html">Vežba 7</a>
-                    <a href="vezbe/8_vezba_JS.html">Vežba 8</a>
-                    <a href="vezbe/9_vezba_flexbox.html">Vežba 9</a>
-                    <a href="vezbe/10_vezba_JS_button.html">Vežba 10</a>
-                    <a href="vezbe/11_vezba_JS_klik_na_div.html">Vežba 11</a>
-                    <a href="vezbe/12_vezba_forma_ispis.html">Vežba 12</a>
-                </div>
+            <!-- <div class="nav-layout nav-cw sticky"> -->
+            <!-- <a href="#" id="vezbe">VEŽBE</a> -->
+            <div class="dropdown" id="dropdown">
+                <a href="vezbe/vezba_1.html">Vežba 1</a>
+                <a href="vezbe/vezba_2.html">Vežba 2</a>
+                <a href="vezbe/vezba_3.html">Vežba 3</a>
+                <a href="vezbe/vezba_4.html">Vežba 4</a>
+                <a href="vezbe/5_vezba_za_responzivnost.html">Vežba 5</a>
+                <a href="vezbe/6_vezba_podizanje_na_github.html">Vežba 6</a>
+                <a href="vezbe/7_vezba_2d_3d_transformacije.html">Vežba 7</a>
+                <a href="vezbe/8_vezba_JS.html">Vežba 8</a>
+                <a href="vezbe/9_vezba_flexbox.html">Vežba 9</a>
+                <a href="vezbe/10_vezba_JS_button.html">Vežba 10</a>
+                <a href="vezbe/11_vezba_JS_klik_na_div.html">Vežba 11</a>
+                <a href="vezbe/12_vezba_forma_ispis.html">Vežba 12</a>
             </div>
+            <!-- </div> -->
 
 
 
@@ -82,7 +85,13 @@
                     <li>Skaliranje plaćenih kampanja i oglasa na Facebook Ads i na Google Ads Menadžeru</li>
                     <li>Kreiranje novih plaćenih kampanja sa uskim targetingom na potencijalnu publiku</li>
                 </ul>
+                <h1>SERTIFIKATI</h1>
+                <ul>
+                    <li>Sertifikat za Digitalni marketing, Eduka Plus</li>
+                    <li>Sertifikat za Dropshiping, Eduka Plus</li>
+                    <li>Sertifikat Microsoft Web Development, IT Academy</li>
 
+                </ul>
             </div>
         </div>
     </div>
@@ -93,7 +102,25 @@
         <i class="fa fa-envelope"> karisiksead@gmail.com</i>
         <i class="fa fa-phone"> +381 65 399 2 399</i>
     </div>
+    <script>
+        document.getElementById('hamburger-menu').onclick = function() {
+            let y = document.getElementById('nav-cw');
+            if (y.style.display === "none") {
+                y.style.display = "flex";
+            } else {
+                y.style.display = "none";
+            }
+        }
 
+        document.getElementById('vezbe').onclick = function() {
+            let x = document.getElementById('dropdown');
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 

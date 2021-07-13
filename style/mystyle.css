@@ -243,12 +243,11 @@
         flex-direction: column;
         justify-content: center;
         font-size: 150%;
-        /* align-content: flex-start; */
     }
     
     .header-layout img {
-        max-width: 25vw;
-        height: 25vh;
+        max-width: 25%;
+        height: 25%;
         border-radius: 50%;
     }
     
@@ -271,6 +270,7 @@
     .nav-layout a {
         color: white;
         padding: 12px 35px;
+        max-height: 45px;
         text-decoration: none;
         text-align: center;
     }
@@ -292,6 +292,10 @@
     }
     /* stilizacija dropdown linkova */
     
+    #hamburger-menu {
+        display: none;
+    }
+    
     .dropdown {
         display: none;
         position: absolute;
@@ -301,14 +305,11 @@
     }
     
     .dropdown a {
-        /* color: black; */
-        padding: 20px 16px 30px 16px;
+        padding: 15px 16px 30px 16px;
+        margin-top: 1px;
         text-decoration: none;
-        display: block;
-    }
-    
-    #dropdown:hover .dropdown {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     /* KRAJ stilizacija dropdown linkova */
     
@@ -361,7 +362,6 @@
     .content-layout img,
     h1 {
         width: 100%;
-        /* height: 300px; */
         padding: 15px;
     }
     
@@ -389,13 +389,18 @@
             border-radius: 0;
             width: 100%;
         }
+        .dropdown,
         div.sticky {
             position: static;
         }
         /* novo dodato */
-        /* .nav-layout {
+        .nav-cw {
             display: none;
-        } */
+        }
+        #hamburger-menu {
+            display: block;
+            cursor: pointer;
+        }
         img {
             margin: auto;
         }
