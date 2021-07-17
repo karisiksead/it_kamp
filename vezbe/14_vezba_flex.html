@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../style/mystyle.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .naslov {
+            display: flex;
+            margin: auto;
+            background-color: #20364B;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 80%;
+            max-height: 25vh;
+        }
+        
+        .naslov img {
+            max-width: 10%;
+            margin-left: 30px;
+        }
+        
+        .linkovi {
+            display: flex;
+            max-width: 70%;
+            justify-content: space-between;
+            margin-right: 50px;
+        }
+        
+        .linkovi a {
+            color: blanchedalmond;
+            padding: 30px;
+        }
+        
+        .linkovi i {
+            color: blanchedalmond;
+            padding: 20px;
+        }
+        
+        .sadrzaj {
+            display: flex;
+            max-width: 80%;
+            min-height: 30%;
+            margin: auto;
+            justify-content: center;
+            background-color: #20364B;
+        }
+        
+        .levi {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 50%;
+            padding: 20px;
+        }
+        
+        input,
+        button {
+            width: 50%;
+            min-height: 45px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="../index.html">Početna strana</a>
+    </div>
+    <div class="naslov">
+        <img src="../images/Logo.png" alt="">
+        <div class="linkovi">
+            <a href="">Home</a>
+            <a href="">Services</a>
+            <a href="">Blog</a>
+            <a href="">About</a>
+            <a href="">FAQ</a>
+            <i class="far fa-star"> </i>
+        </div>
+    </div>
+    <div class="sadrzaj">
+        <div class="levi">
+            <h1 style="color: yellow;">SubscribeNow</h1>
+            <span><h1 style="color: blanchedalmond;">to OurNewsletter</h1></span>
+            <p style="color: blanchedalmond;">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit dapibus ligula, suscipit dictumst montes facilisis quisque nullam lectus aenean, curae rutrum aliquet taciti neque fusce fames nascetur. Cubilia cursus dictumst leo dis taciti iaculis dictum himenaeos
+                felis fames, dignissim porta aptent platea curabitur elementum sollicitudin suscipit euismod praesent nec, non quam aliquam tortor sed condimentum id ad in.
+            </p>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <button style="background-color: yellow; width: 20%;">Send</button>
+        </div>
+
+        <div class="levi">
+            <img src="../images/robotika-kurs.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
