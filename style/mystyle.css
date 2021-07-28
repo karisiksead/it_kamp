@@ -316,12 +316,11 @@
     .nav-layout a:hover {
         background-color: #dddddd;
         color: black;
+        max-height: 45px;
     }
     
     .nav-cw a:hover {
-        border: 2px solid #00C4CC;
         color: #00C4CC;
-        font-weight: bold;
     }
     
     .content-layout {
