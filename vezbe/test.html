@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header,
+        footer {
+            display: flex;
+            width: 100%;
+            background-color: burlywood;
+            justify-content: center;
+        }
+        
+        .sadrzaj {
+            display: flex;
+            width: 100%;
+            text-align: center;
+            justify-content: space-between;
+        }
+        
+        .navigation {
+            min-width: 20%;
+            min-height: 400px;
+            background-color: cornsilk;
+        }
+        
+        .content {
+            min-width: 50%;
+            min-height: 400px;
+            background-color: darkcyan;
+        }
+        
+        .sidebar {
+            min-width: 30%;
+            min-height: 400px;
+            background-color: darksalmon;
+        }
+        
+        @media screen and (max-width:480px) {
+            .sadrzaj {
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <div class="sadrzaj">
+        <div class="navigation">
+            <h2>Navigation</h2>
+        </div>
+        <div class="content">
+            <h2>Content</h2>
+        </div>
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+        </div>
+    </div>
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+</body>
+
+</html>
