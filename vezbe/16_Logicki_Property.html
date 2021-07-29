@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../style/mystyle.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: turquoise;
+        }
+        
+        img {
+            margin-block: 25px;
+            width: 50%;
+        }
+        
+        .glavni {
+            display: flex;
+            flex-wrap: wrap;
+            /* position: relative; */
+            justify-content: space-evenly;
+            margin-block-start: 10%;
+        }
+        
+        .logicki {
+            /* block-size: 500px; */
+            inline-size: 30%;
+            border: 10px solid red;
+            border-end-end-radius: 30px;
+            color: white;
+            background-color: cornflowerblue;
+        }
+        
+        .fizicki {
+            /* min-height: 500px; */
+            width: 30%;
+            border: 10px solid green;
+            border-bottom-left-radius: 30px;
+            color: white;
+            background-color: cornflowerblue;
+        }
+        
+        .content-logicki {
+            block-size: 100px;
+            /* inline-size: 250px; */
+            background-color: greenyellow;
+        }
+        
+        .content-logicki p {
+            padding-block-start: 40px;
+            padding-inline-start: 20px;
+            color: black;
+        }
+        
+        .content-logicki i {
+            margin-inline-end: 10px;
+        }
+        
+        .content-fizicki {
+            height: 100px;
+            width: 250px;
+            background-color: greenyellow;
+        }
+        
+        .content-fizicki p {
+            padding-top: 40px;
+            padding-left: 20px;
+            color: black;
+        }
+        
+        .content-fizicki i {
+            margin-right: 10px;
+        }
+        
+        .border-logicki {
+            inline-size: 350px;
+            border-block: 15px solid #ddcf08;
+            border-inline: 15px solid #dd7a08;
+            padding-block-start: 20px;
+            padding-block-end: 20px;
+            padding-inline-start: 25px;
+            padding-inline-end: 25px;
+            background-color: coral;
+            margin-block-start: 100px;
+            margin-block-end: 100px;
+            margin-inline: auto;
+        }
+        
+        .border-fizicki {
+            width: 350px;
+            border-top: 15px solid #ddcf08;
+            border-bottom: 15px solid #ddcf08;
+            border-left: 20px solid #dd7a08;
+            border-right: 20px solid #dd7a08;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 25px;
+            padding-right: 25px;
+            background-color: coral;
+            margin: 100px auto 100px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="../index.html">Početna strana</a>
+    </div>
+    <div class="glavni">
+        <div class="logicki">
+            <h1>Logički propertiji</h1>
+
+            <div class="border-logicki">
+                <div class="content-logicki">
+                    <p><i class="fa fa-trophy"></i>Ovo je pobednički pehar</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="fizicki">
+            <h1>Fizički propertiji</h1>
+
+            <div class="border-fizicki">
+                <div class="content-fizicki">
+                    <p><i class="fa fa-trophy"></i>Ovo je pobednički pehar</p>
+                </div>
+            </div>
+
+        </div>
+        <img src="../images/propertiji.png" alt="propertiji">
+    </div>
+
+</body>
+
+</html>
