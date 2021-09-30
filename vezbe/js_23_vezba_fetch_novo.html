@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        
+        .card {
+            height: 350px;
+            width: 300px;
+            background-color: chocolate;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <p id="cat-fact" style="text-transform: capitalize; color: blue;"></p>
+    <p id="cat-fact">Duzina je:</p>
+
+    <p id="cat-len" style="text-transform: capitalize; color: red;"></p> -->
+
+    <div class="container" id="container">
+        <!-- <div class="card"></div> -->
+    </div>
+
+    <script>
+        var l = 100;
+
+        function addCard(text) {
+            var node = document.createElement("div");
+            var content = document.createElement("p");
+            node.innerHTML = text;
+            node.className = "card";
+            node.appendChild(content);
+            document.getElementById("container").appendChild(node);
+        }
+
+
+        async function fetchText() {
+            let response = await fetch("https://catfact.ninja/facts?limit=${l}");
+            if (response.status === 200) {
+                let res = await response.json();
+                console.log(res);
+                //handle data
+                res.data.forEach(element => {
+                    addCard(element.fact);
+                });
+                // let element = document.getElementById("cat-fact");
+                // element.innerHTML = data.fact;
+                // let element_len = document.getElementById("cat-len");
+                // element_len.innerHTML = data.length;
+            }
+        }
+        fetchText();
+    </script>
+</body>
+
+</html>
